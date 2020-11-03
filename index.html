@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EB"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<META NAME="TITLE" CONTENT="Weinbau - Buschenschank Hartinger">
+<META NAME="DESCRIPTION" CONTENT="Wir sind ein Familienbetrieb und bewirtschaften schon seit Generationen einen Weingarten am Frauen-Berg.">
+<META NAME="KEYWORDS" CONTENT="weinbau, hartinger, weinbau-hartinger, übersbach, hartl, fraunberg, wein, weinbau hartinger,Josef, Morillon, Chardonnay, Riesling, Weißburgunder, Zweigelt, Welschriesling- Cuvee, Kürbis, Kürbiskernöl, Ab Hof, Hartl, Söchau, Österreich, 24 stunden, 24h, hofverkauf, martin hartinger, weinverkauf, gmiatlich, gemütlich">
+<META NAME="OWNER" CONTENT="weinbau-hartinger@hotmail.com">
+<META NAME="AUTHOR" CONTENT="Stefan Lendl, Roland Felgitsch">
+<META HTTP-EQUIV="EXPIRES" CONTENT="">
+<META HTTP-EQUIV="CHARSET" CONTENT="ISO-8859-1">
+<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="Deutsch">
+<META HTTP-EQUIV="VW96.OBJECT TYPE" CONTENT="Homepage">
+<META NAME="RATING" CONTENT="Alle">
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
+<META NAME="REVISIT-AFTER" CONTENT="30 Days">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+    <title>Weinbau-Buschenschank Hartinger</title>
+
+    <style type="text/css" title="currentStyle" media="screen">
+		@import "style/style.css";
+		@import "style/main.css";
+		@import "sites/lightbox/css/lightbox.css";
+    </style>
+<script type="text/javascript">
+// Browser Slide-Show script. With image cross fade effect for those browsers
+// that support it.
+// Script copyright (C) 2004-2011 www.cryer.co.uk.
+// Script is free to use provided this copyright header is included.
+var FadeDurationMS=1000;
+function SetOpacity(object,opacityPct)
+{
+  // IE.
+  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+  // Old mozilla and firefox
+  object.style.MozOpacity = opacityPct/100;
+  // Everything else.
+  object.style.opacity = opacityPct/100;
+}
+function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+{
+  var element=document.getElementById(id);
+  var msNow = (new Date()).getTime();
+  var opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+  if (opacity>=100)
+  {
+    SetOpacity(element,100);
+    element.timer = undefined;
+  }
+  else if (opacity<=0)
+  {
+    SetOpacity(element,0);
+    element.timer = undefined;
+  }
+  else 
+  {
+    SetOpacity(element,opacity);
+    element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",10);
+  }
+}
+function FadeInImage(foregroundID,newImage,backgroundID)
+{
+  var foreground=document.getElementById(foregroundID);
+  if (foreground.timer) window.clearTimeout(foreground.timer);
+  if (backgroundID)
+  {
+    var background=document.getElementById(backgroundID);
+    if (background)
+    {
+      if (background.src)
+      {
+        foreground.src = background.src; 
+        SetOpacity(foreground,100);
+      }
+      background.src = newImage;
+      background.style.backgroundImage = 'url(' + newImage + ')';
+      background.style.backgroundRepeat = 'no-repeat';
+      var startMS = (new Date()).getTime();
+      foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "'," + FadeDurationMS + "," + startMS + ",100,0)",10);
+    }
+  } else {
+    foreground.src = newImage;
+  }
+}
+var slideCache = new Array();
+function RunSlideShow(pictureID,backgroundID,imageFiles,displaySecs)
+{
+  var imageSeparator = imageFiles.indexOf(";");
+  var nextImage = imageFiles.substring(0,imageSeparator);
+  if (slideCache[nextImage] && slideCache[nextImage].loaded)
+  {
+    FadeInImage(pictureID,nextImage,backgroundID);
+    var futureImages = imageFiles.substring(imageSeparator+1,imageFiles.length)
+      + ';' + nextImage;
+    setTimeout("RunSlideShow('"+pictureID+"','"+backgroundID+"','"+futureImages+"',"+displaySecs+")",
+      displaySecs*1000);
+    // Identify the next image to cache.
+    imageSeparator = futureImages.indexOf(";");
+    nextImage = futureImages.substring(0,imageSeparator);
+  } else {
+    setTimeout("RunSlideShow('"+pictureID+"','"+backgroundID+"','"+imageFiles+"',"+displaySecs+")",
+      250);
+  }
+  // Cache the next image to improve performance.
+  if (slideCache[nextImage] == null)
+  {
+    slideCache[nextImage] = new Image;
+    slideCache[nextImage].loaded = false;
+    slideCache[nextImage].onload = function(){this.loaded=true};
+    slideCache[nextImage].src = nextImage;
+  }
+}
+</script>
+
+<script type="text/javascript">
+RunSlideShow("slideshow","slideshowbg",
+    "pics/slideshow/01.jpg;pics/slideshow/02.jpg;pics/slideshow/03.jpg;pics/slideshow/04.jpg;pics/slideshow/05.jpg;pics/slideshow/06.jpg;pics/slideshow/07.jpg;pics/slideshow/08.jpg;pics/slideshow/09.jpg;pics/slideshow/10.jpg;pics/slideshow/11.jpg",3);
+</script>
+
+<script type="text/javascript" src="sites/lightbox/js/prototype.js"></script>
+<script type="text/javascript" src="sites/lightbox/js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="sites/lightbox/js/lightbox.js"></script>
+
+</head>
+<body id="hartinger">
+<div id="container">
+    <div id="site">
+	<div id="intro">
+             <div id="header">
+				<div class="logo"><a href="index.html"><img src="pics/Logo_hartinger.png"/></a></div>
+				<div class="header-picture"><img src="pics/home-image.jpg"/></div>
+             </div>
+             <div id="maxim">
+             </div>
+      </div>
+         <div id="content">
+             <div id="contentHeader">
+
+             </div>
+             <div id="contentText">
+             	<h3>Herzlich Willkommen!</h3>
+				<figure class="contentimg">
+				  <a href="sites/weine.html"><img src="pics/Junker2020.jpg" alt="Junker 2020"></a>
+				</figure>
+				<hr align="left" width="400" size="2" noshade="noshade" color="darkgreen">
+				<div class="callToAction" style="margin: 100px 0 60px 0;">
+				<p class="contenttxt">
+				<img src="pics/hofladen.png" align="center" width="512" alt="24h Hofladen"><br>
+				Kontaktloses Einkaufen in unserem 24h Hofladen am Weinhof in Hartl.<br>
+				<br>
+				Euer Nachschub an Wein, Kernöl, Saft usw. ist gesichert! <br>
+				Unsere Produkte werden natürlich auch weiterhin per Paketdienst versendet oder wenn möglich in der näheren Umgebung kostenlos zugestellt! <br>
+				<br>
+				<br>
+				Alles Gute und vielen Dank für die Treue in dieser ausgewöhnlichen Zeit!<br>
+				Bleibt gesund, Familie Hartinger<br>
+				<!--Besuchen Sie unseren<br>-->
+				<!--am Weinhof Hartinger!<br><br>
+				<b>Wein - Kernöl - Saft </b>
+				<br>rund um die Uhr erhältlich!</p> -->
+				</div>
+                <hr align="left" width="400" size="2" noshade="noshade" color="darkgreen">
+				<h4>"Ausgezeichneter Erfolg"</h4>
+				
+				<figure class="contentimg">
+				  <img src="pics/Kernoel_Champion_2018.jpg" alt="Kernöl Championat"/>
+				  <figcaption><b>Kürbiskernöl Championat 2018/2019:</b><br><span>Unser Kernöl ist eines der 3. Besten in der Steiermark</span></figcaption>
+				</figure>
+				               
+			   <div id="slideshowbg" width="512" height="341" style="width:512px;margin: auto">                
+           	     <img src="pics/slideshow/01.jpg" width="512" height="341" id="slideshow">
+				</div>
+
+<h4><a href="sites/buschenschank.html" id="Oeffnungszeiten"><marquee scrollamount="6" onMouseover="this.scrollAmount='0'" onMouseout="this.scrollAmount='6'" style="border: 1px solid #000000; width: 100%; line-height: 120%; background-color: #fffff; padding: 15px 0">
+Unsere Öffnungszeiten 2020: 06.03 - 19.04 | 20.05 - 14.06. | 17.07 - 16.08. (Mi offen!) | 02.10 - 08.11.
+</marquee>
+</a>
+</h4>
+        </div>
+         </div>
+    </div>
+    <div id="navigation">
+        <ul>
+            <li class="active" onClick="window.location.href='index.html';"><a href="index.html">Home</a></li>
+            <li onClick="window.location.href='sites/about.html';"><a href="sites/about.html">&Uuml;ber uns</a></li>
+            <li onClick="window.location.href='sites/keller.html';"><a href="sites/keller.html">Keller</a></li>
+            <li onClick="window.location.href='sites/buschenschank.html';"><a href="sites/buschenschank.html">Buschenschank</a></li>
+            <li onClick="window.location.href='sites/weine.html';"><a href="sites/weine.html">Produkte</a></li>
+            <li onClick="window.location.href='sites/bestellung.html';"><a href="sites/bestellung.html">Bestellung</a></li>
+            <li onClick="window.location.href='sites/kontakt.html';"><a href="sites/kontakt.html">Kontakt</a></li>
+            <li><a href="https://www.facebook.com/Buschenschank-Kellerstöckl-Hartinger-735626239867134" target="_blank" >Folge uns: <img src="pics/fb.png" alt="Finde uns auf Facebook" /></a></li>
+        </ul>
+    </div>
+
+    <div id="footer">
+    	<p class="footertxt"><b>Weinhof:</b> Hartl 23, 8362 Hartl bei Fürstenfeld <a href="https://goo.gl/maps/zyX5Yib9dcdnGFnv5" target=_blank>[Google Maps]</a> | <b>Buschenschank:</b> Oberlamm 84, 8352 Unterlamm <a href="https://www.google.com/maps/place/Buschenschank+Hartinger/@47.0023679,16.0327533,17z/data=!4m13!1m7!3m6!1s0x476efce9534c7529:0xda28e14e3f91388b!2sOberlamm+84,+8352,+%C3%96sterreich!3b1!8m2!3d47.0023679!4d16.034942!3m4!1s0x0:0xc255b24b44c502d5!8m2!3d47.0029168!4d16.0351762?hl=de" target=_blank>[Google Maps]</a> |  <b>Tel./Fax:</b> <a href="tel:+43 33872282">+43 33872282</a> | <a href="sites/impressum.html"><b>Impressum</b></a></p>
+    </div>
+</div>
+</body>
+</html>
